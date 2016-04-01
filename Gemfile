@@ -19,9 +19,9 @@ gem 'bootstrap-sass'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
-group :development, :test do
-  gem 'byebug'
+group :development do
   gem 'web-console', '~> 2.0'
+  gem 'byebug'
   gem 'spring'
   gem 'sqlite3'
 end
@@ -30,6 +30,9 @@ group :test do
   gem 'minitest-reporters'
   gem 'mini_backtrace'
   gem 'guard-minitest'
+  gem 'test-unit'
+  gem 'ruby-prof'
+  gem 'guard'
 end
 
 group :production do
