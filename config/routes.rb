@@ -10,3 +10,7 @@ Rails.application.routes.draw do
   get 'signup' =>   'users#new'
 
 end
+
+
+# heroku --> https://obscure-brushlands-95895.herokuapp.com/ | https://git.heroku.com/obscure-brushlands-95895.git
+
