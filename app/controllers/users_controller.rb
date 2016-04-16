@@ -10,7 +10,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      # handle succesfull save
+      flash[:succes] = "Thanks for putting your trust in this app!"
+      redirect_to @user
     else
       render 'new'
     end

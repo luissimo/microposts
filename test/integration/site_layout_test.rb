@@ -17,6 +17,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   test "check title sign up page" do
     get signup_path
     assert_response :success
-    assert_select "title", "Sign Up | #{@base_title}"
+    assert_select "title", "Sign up | #{@base_title}"
   end
 end
