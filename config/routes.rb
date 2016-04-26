@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
   resources :users
-
-  get 'users/new'
+  resources :account_activations, only: [:edit]
 
   root                'static_pages#home'
   get 'help' =>       'static_pages#help'
@@ -15,7 +12,6 @@ Rails.application.routes.draw do
   delete 'logout' =>  'sessions#destroy'
 
 end
-
 
 # heroku --> https://obscure-brushlands-95895.herokuapp.com/ | https://git.heroku.com/obscure-brushlands-95895.git
 
